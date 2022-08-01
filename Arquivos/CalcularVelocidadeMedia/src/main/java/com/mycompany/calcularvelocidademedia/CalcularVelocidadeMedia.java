@@ -26,5 +26,7 @@ public class CalcularVelocidadeMedia {
         System.out.println("O custo do litro do combustível é de R$" + custoLitro + " reais.");
         double custoTotal = (distanciaPercorrida / consumoLitro) * custoLitro;
         System.out.println("O custo total da viagem é de R$" +custoTotal+ " reais.");
+        String teste = "luis henrique rossi";
+        System.out.println(teste);
     }
 }

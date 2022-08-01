@@ -16,7 +16,8 @@ public class Variaveis {
     public static void main(String[] args) {
         System.out.println("============================================");
         //Altere o valor da variável abaixo para realizar testes
-        double precoProduto = 150.0;
+        double precoProduto;
+        precoProduto  = 150.0;
         System.out.println("O preço do produto é de " + precoProduto + "reais");
         double percentualDesconto = 10.0;
         System.out.println("O desconto será de " + percentualDesconto + "%." );
