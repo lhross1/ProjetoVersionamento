@@ -15,11 +15,11 @@ public class EntradaDados {
 
     public static void main(String[] args) {
         System.out.println("==================");
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Digite uma distância: ");
-        double distanciaPercorrida = sc.nextDouble();
+        double distanciaPercorrida = input.nextDouble();
         System.out.println("A distância digitada foi " + distanciaPercorrida + " Km.");
-        sc.close();
+        input.close();
         System.out.println("Fim!");
         System.out.println("===================");
     }
