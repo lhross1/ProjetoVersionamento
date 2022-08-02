@@ -21,20 +21,20 @@ public class DiferentesTiposDados {
         String texto = scanner.nextLine(); 
         System.out.println("O texto digitado foi " + texto);
         //---------------------------------------
-          System.out.println(" >>> Digite um decimal: ");
+        System.out.println(" >>> Digite um decimal: ");
         Double numerodecimal = scanner.nextDouble(); 
         System.out.println("O número decimal digitado foi " + numerodecimal);
         //---------------------------------------
-           System.out.println(" >>> Digite um inteiro: ");
+        System.out.println(" >>> Digite um inteiro: ");
         int numeroInteiro = scanner.nextInt(); 
         System.out.println("O número inteiro digitado foi " + numeroInteiro);
         //---------------------------------------
-            System.out.println(" >>> Digite um boolean (true ou false): ");
+        System.out.println(" >>> Digite um boolean (true ou false): ");
         boolean booleano = scanner.nextBoolean(); 
         System.out.println("O booleano digitado foi " + booleano);
         //---------------------------------------
-       /* scanner.close();
+        scanner.close();
         System.out.println("Fim!");
-        System.out.println("=============================");*/
+        System.out.println("=============================");
     }
 }
