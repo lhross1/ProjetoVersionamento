@@ -40,7 +40,7 @@ public class ExercicioDecisao5 {
         System.out.println(c+ "->"  + b + "->" + a);
       }
         
-     // System.out.println(primeiro+"->"+segundo+"->"+terceiro); 
+     sc.close();
       }
       
       

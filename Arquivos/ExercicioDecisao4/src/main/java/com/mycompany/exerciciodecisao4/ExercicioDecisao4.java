@@ -27,5 +27,6 @@ public class ExercicioDecisao4 {
        custoTotal = custoMaca*quantidade;
        }
         System.out.println("Valor total da compra: "+custoTotal+ " R$");
+        scanner.close();
     }
 }

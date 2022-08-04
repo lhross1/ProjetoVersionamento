@@ -22,6 +22,6 @@ public class ExercicioDecisao3 {
         else{
             System.out.println("ACESSO NEGADO");
         }
-        
+     scanner.close();
     }
 }

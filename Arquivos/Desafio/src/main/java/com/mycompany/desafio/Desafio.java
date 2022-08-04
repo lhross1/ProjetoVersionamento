@@ -24,7 +24,8 @@ public class Desafio {
         } else {
             System.out.println("O número é ímpar");
         }
-        }       
+    sc.close();    
+    }       
         }
    
 

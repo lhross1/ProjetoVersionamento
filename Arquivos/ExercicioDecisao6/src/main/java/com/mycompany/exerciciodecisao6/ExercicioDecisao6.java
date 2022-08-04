@@ -36,6 +36,6 @@ public class ExercicioDecisao6 {
        } else{
        System.out.println("peso ideal indefinido");
        }
-       
+      sc.close(); 
     }
 }
