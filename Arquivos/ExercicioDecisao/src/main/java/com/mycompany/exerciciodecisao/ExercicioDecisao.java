@@ -23,8 +23,10 @@ public class ExercicioDecisao {
         
                 if(valor1>valor2){
                 System.out.println("O maior valor é o valor1");
-                }
-                else{
+                }else if(valor1==valor2){
+                System.out.println("Os valores são iguais");
+                } else
+                  {
                 System.out.println("O maior valor é o valor2");
                 }
          scanner.close();           

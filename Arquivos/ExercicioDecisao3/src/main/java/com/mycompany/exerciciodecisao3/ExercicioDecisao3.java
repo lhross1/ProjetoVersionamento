@@ -17,10 +17,10 @@ public class ExercicioDecisao3 {
         System.out.println("Digite a senha:");
         int senha = scanner.nextInt();
         if(senha==1234){
-            System.out.println("Senha correta");
+            System.out.println("ACESSO PERMITIDO");
         }
         else{
-            System.out.println("Senha incorreta");
+            System.out.println("ACESSO NEGADO");
         }
         
     }
