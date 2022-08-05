@@ -17,22 +17,22 @@ public class Switch1 {
         Scanner sc = new Scanner(System.in);
          System.out.println("Digite uma letra");
          String letra = sc.nextLine();
-         String letraMinuscula = letra.toLowerCase();
+         letra = letra.toLowerCase();
          
-      switch(letraMinuscula){
-            case "a":letraMinuscula = "Vogal";
+      switch(letra){
+            case "a":letra = "Vogal";
             break;
-            case "e":letraMinuscula = "Vogal";
+            case "e":letra = "Vogal";
             break;
-            case "i":letraMinuscula = "Vogal";
+            case "i":letra = "Vogal";
             break;
-            case "o":letraMinuscula = "Vogal";
+            case "o":letra = "Vogal";
             break;
-            case "u":letraMinuscula = "Vogal";
+            case "u":letra = "Vogal";
             break;
-            default: letraMinuscula = "Consoante";
+            default: letra = "Consoante";
             }
-            System.out.println("A letra é uma " + letraMinuscula);
+            System.out.println("A letra é uma " + letra);
             sc.close();
     }
 }
