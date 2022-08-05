@@ -13,7 +13,7 @@ import java.util.Scanner
 public class ExercicioDecisao5 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+       /* Scanner sc = new Scanner(System.in);
          System.out.println("Digite o primeiro valor:");
          int a = sc.nextInt();
           System.out.println("Digite o segundo valor:");
@@ -39,8 +39,41 @@ public class ExercicioDecisao5 {
       else if(a>b && b>c && a>c){
         System.out.println(c+ "->"  + b + "->" + a);
       }
-        
-     sc.close();
+     
+     sc.close();*/
+Scanner sc = new Scanner(System.in);
+         System.out.println("Digite o primeiro valor:");
+         int a = sc.nextInt();
+          System.out.println("Digite o segundo valor:");
+         int b = sc.nextInt(); 
+           System.out.println("Digite o terceiro valor:");
+        int c = sc.nextInt();
+        System.out.println("Os valores digitados foram: "+a+","+b+" e "+c+".");
+        int temp;
+      
+        if (b < a) {
+      temp = a;
+      a = b;
+      b = temp;
+    }
+
+    if (c < b) {
+      temp = b;
+      b = c;
+      c = temp;
+    }
+
+    if (b < a) {
+      temp = a;
+      a = b;
+      b = temp;
+    }
+
+    System.out.println(a);
+    System.out.println(b);
+    System.out.println(c);
+       
+       
       }
       
       
