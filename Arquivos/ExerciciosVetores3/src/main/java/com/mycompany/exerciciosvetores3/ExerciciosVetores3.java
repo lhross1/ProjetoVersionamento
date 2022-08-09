@@ -33,7 +33,7 @@ public class ExerciciosVetores3 {
         notas[3] = sc.nextDouble();
         
         System.out.println("As notas digitadas foram: "+notas[0]+", "+notas[1]+", "+notas[2]+" e "+notas[3]);
-        double media = (notas[0]+notas[1]+notas[2]+notas[3])/4;
+        double media = (notas[0]+notas[1]+notas[2]+notas[3])/nNotas;
        
         System.out.println("A média das notas é: "+media);
         
