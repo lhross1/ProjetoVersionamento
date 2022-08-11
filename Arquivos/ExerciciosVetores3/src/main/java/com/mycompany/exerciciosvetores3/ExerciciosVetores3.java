@@ -36,7 +36,5 @@ public class ExerciciosVetores3 {
         double media = (notas[0]+notas[1]+notas[2]+notas[3])/nNotas;
        
         System.out.println("A média das notas é: "+media);
-        
-        System.out.println("Hello World!");
     }
 }
