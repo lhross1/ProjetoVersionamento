@@ -3,29 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.desafiowhile;
+package com.mycompany.lacofor1;
 
 /**
  *
  * @author Aluno
- */
-public class DesafioWhile {
+*/
+import java.util.Scanner;
+
+public class LacoFor1 {
 
     public static void main(String[] args) {
         
-       int numero = 0;
-       int resto = 0;
-      
-        while (numero<100){
-        numero++;
-        resto = numero % 2;
-        
-                if(resto==0){
-                   System.out.println(numero); 
-                }
+        int[] vetor = new int []{1,2,3,4,5};
+        for(int i = 0; i<5 ; i++){
+         System.out.println(vetor[i]);
         }
-                
-  
-     
+       
     }
 }
