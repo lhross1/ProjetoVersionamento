@@ -24,15 +24,15 @@ public class VetorWhile4 {
             System.out.println("Digite uma letra");
             vetor[i] = sc.nextLine();
             switch(vetor[i]){
-                case "a": System.out.println("vogal");
-                    break;
-                case "e": System.out.println("vogal");
-                    break;
-                case "i": System.out.println("vogal");
-                    break;
-                case "o": System.out.println("vogal");
-                    break;
-                case "u": System.out.println("vogal");
+                case "a": /*System.out.println("vogal")*/;
+                   // break;
+                case "e": /*System.out.println("vogal")*/;
+                  //  break;
+                case "i": /*System.out.println("vogal")*/;
+                 //   break;
+                case "o": /*System.out.println("vogal")*/;
+                  //  break;
+                case "u": /*System.out.println("vogal")*/;
                     break;
                 default:
                     quantidade++;

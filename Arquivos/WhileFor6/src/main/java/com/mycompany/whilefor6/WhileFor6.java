@@ -30,7 +30,7 @@ public class WhileFor6 {
         int i;
         
         for(i=0; i<aluno1.length; i++){
-        aluno1[i] = random.nextDouble(10);
+        aluno1[i] = random.nextDouble(10)+4;
         soma1 += aluno1[i];
         }
         for(i = 0; i<aluno1.length ; i++ ){
