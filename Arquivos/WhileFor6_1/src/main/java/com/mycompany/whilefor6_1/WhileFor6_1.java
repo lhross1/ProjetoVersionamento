@@ -37,7 +37,7 @@ public class WhileFor6_1 {
         
        for(i=0;i<nAlunos;i++){
            if(mediaAlunos[i]>=7){
-           System.out.println("A média do aluno "+(i+1)+"é "+mediaAlunos[i]);
+           System.out.println("A média do aluno "+(i+1)+" é "+mediaAlunos[i]);
            }
        
        } 
