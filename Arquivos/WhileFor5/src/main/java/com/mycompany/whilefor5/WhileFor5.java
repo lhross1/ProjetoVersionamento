@@ -9,6 +9,7 @@ package com.mycompany.whilefor5;
  *
  * @author Aluno
  */
+
 import java.util.Scanner;
 public class WhileFor5 {
 
@@ -49,12 +50,9 @@ public class WhileFor5 {
          sc.close();
     }
 }
-    
-  
-         
-         
-        
-        
+   
+
+
         
         
         

@@ -19,12 +19,14 @@ public class WhileFor9 {
         int i;
         int somaQuadrados =0;
         
-        for(i=0;i<10;i++){
+        for(i=0;i<inteiros.length;i++){
               System.out.println("Digite um inteiro:");
             inteiros[i] = sc.nextInt();
             somaQuadrados += Math.pow(inteiros[i],2);
         }
         
         System.out.println("A soma dos quadrados dos inteiros digitados é: "+somaQuadrados);
+        
+        sc.close();
     }
 }

@@ -47,7 +47,7 @@ public class WhileFor6 {
         
         
         for(i=0; i<aluno3.length; i++){
-        aluno3[i] = random.nextDouble(10);
+        aluno3[i] = random.nextDouble(10)+5;
         soma3 += aluno3[i];
         }
          for(i = 0; i<aluno3.length ; i++ ){

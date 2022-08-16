@@ -19,14 +19,14 @@ public class WhileFor7 {
         int soma = 0;
         int multiplicacao = 1;
         
-        for(i=0;i<5;i++){
+        for(i=0;i<inteiros.length;i++){
              System.out.println("Digite um inteiro:");
             inteiros[i] = sc.nextInt();
             soma += inteiros[i];
             multiplicacao *= inteiros[i];
         }
         System.out.println("Os números digitados foram:"); 
-        for(i=0;i<5;i++){
+        for(i=0;i<inteiros.length;i++){
          System.out.println(inteiros[i]);
          }
         

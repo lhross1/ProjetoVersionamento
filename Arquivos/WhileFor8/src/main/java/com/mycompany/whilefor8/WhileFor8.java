@@ -19,12 +19,12 @@ public class WhileFor8 {
         double[] altura = new double[5];
         int i;
         
-        for(i=0;i<5;i++){
+        for(i=0;i<idade.length;i++){
         System.out.println("Digite a idade do aluno "+(i+1));
         idade[i] = sc.nextInt();
         }
         
-         for(i=0;i<5;i++){
+         for(i=0;i<altura.length;i++){
          System.out.println("Digite a altura do aluno "+(i+1));
         altura[i] = sc.nextDouble(); 
          }
