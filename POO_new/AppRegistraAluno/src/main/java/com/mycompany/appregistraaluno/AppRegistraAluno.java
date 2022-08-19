@@ -30,9 +30,9 @@ Scanner sc = new Scanner(System.in);
     aluno[i] = sc.nextLine();
    }
    
-   for(i=0; i<3; i++){
+   /*for(i=0; i<3; i++){
    RegistraAluno aluno[i]= new RegistraAluno;
-   }
+   }*/
    
    
    ana.setNome(sc.nextLine());
