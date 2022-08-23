@@ -10,7 +10,7 @@ package com.mycompany.registraautomoveis;
  */
 public class AutomotoveisDisponiveis {
     
-    //Atri9butos
+    //Atributos
     private String marca;
     private String modelo;
     private int ano;

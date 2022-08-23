@@ -11,43 +11,38 @@ package com.mycompany.contacliente;
 public class AppContaCliente {
     
     private String titular;
-    private int numero;
+    private int nConta;
     private double saldo;
-    
-    private static double deposito;
-    private static double saque;
-    
-    
-    public String getTitular(){
+
+    public String getTitular() {
         return titular;
     }
-    public int getNumero(){
-        return numero;
+    public void setTitular(String titular) {
+        this.titular = titular;
     }
-    public void setTitular(String temp){
-        titular = temp;
+    public int getnConta() {
+        return nConta;
     }
-    public double getSaldo(){
+    public void setnConta(int nConta) {
+        this.nConta = nConta;
+    }
+    public double getSaldo() {
         return saldo;
     }
-     public double getDeposito(){
-        return deposito;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
-      public double getSaque(){
-        return saque;
+    public void setSacar(double valor){
+        if(valor>this.saldo){
+        System.out.println("Operação não realizada. Saldo indisponível"); 
+        }else{this.saldo -= valor;
+        }  
+         System.out.println("Operação realizada. Saldo disponível: "+saldo);
     }
-     public void setNumero(int temp){
-        numero = temp;
+     public void setDepositar(double valor){
+        this.saldo += valor;
     }
-     public void setSaldo(double temp){
-         saldo = temp;
-    }
-     
-    public void setDeposito(double temp){
-        deposito += temp;
-    }
-     public void setSaque(double temp){
-        saque -= temp;
-    }  
     
 }
+    
+   
