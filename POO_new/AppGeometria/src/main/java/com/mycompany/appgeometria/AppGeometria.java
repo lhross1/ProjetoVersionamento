@@ -20,6 +20,7 @@ public class AppGeometria {
        System.out.println("O objeto 1 é um "+a.getNomeFigura());
         
        System.out.println("O perímetro do "+a.getNomeFigura()+" é "+a.getPerimetro());
+       
       
        System.out.println("A área do "+a.getNomeFigura()+" é "+a.getArea());  
 
