@@ -39,6 +39,7 @@ public class VeiculosDisponiveis {
     }
    
     public VeiculosDisponiveis() {
+        
     }
     
    public VeiculosDisponiveis(String marca, String modelo, int ano) {

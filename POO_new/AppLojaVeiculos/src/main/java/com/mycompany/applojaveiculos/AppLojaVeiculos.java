@@ -36,26 +36,24 @@ public class AppLojaVeiculos {
         System.out.println("O modelo do carro é: "+c.getModelo()); 
         System.out.println("O ano do carro é: "+c.getAno()); 
         
-     VeiculosDisponiveis d[] = new VeiculosDisponiveis[2];
+        VeiculosDisponiveis d[] = new VeiculosDisponiveis[2];
     
-     for(int i=0; i<2 ; i++){
-     d[i] = new VeiculosDisponiveis();
-     System.out.println("================================"); 
-     System.out.println("Informe a marca do carro");
-     d[i].setMarca(sc.next());
-     System.out.println("Informe o modelo do carro");
-     d[i].setModelo(sc.next());  
-     System.out.println("Informe o ano do carro");
-     d[i].setAno(sc.nextInt());  
-      
-     }
+        for(int i=0; i<2 ; i++){
+        d[i] = new VeiculosDisponiveis();
+        System.out.println("================================"); 
+        System.out.println("Informe a marca do carro");
+        d[i].setMarca(sc.next());
+        System.out.println("Informe o modelo do carro");
+        d[i].setModelo(sc.next());  
+        System.out.println("Informe o ano do carro");
+        d[i].setAno(sc.nextInt());  
+        }
      
-     for(int i=0; i<2 ; i++){
-     System.out.println(d[i].getMarca());
-     System.out.println(d[i].getModelo());
-     System.out.println(d[i].getAno());
-     }
-    
-     
+        for(int i=0; i<2 ; i++){
+        System.out.println(d[i].getMarca());
+        System.out.println(d[i].getModelo());
+        System.out.println(d[i].getAno());
+        }
+        
     }
 }
