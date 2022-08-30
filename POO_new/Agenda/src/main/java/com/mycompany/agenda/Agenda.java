@@ -45,16 +45,16 @@ public class Agenda {
         System.out.println("Digite um nome para descobrir a posição");
         String c = sc.next(); 
         for(int i=0; i<2 ; i++){
-        if(a[i].getNome() .equals(c)){
+        if(a[i].getNome().equals(c)){
         System.out.println("A posição é: "+(i+1));
-        }else { System.out.println("passou");}
+        }
         }
        
        
          
 //D
      System.out.println();
-        System.out.println("Digite um id para imprimir");
+        System.out.println("Digite um id para imprimir os dados");
          a[sc.nextInt()-1].imprimePessoa();
   
          
