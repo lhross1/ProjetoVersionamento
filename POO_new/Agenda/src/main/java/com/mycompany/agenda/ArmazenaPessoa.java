@@ -16,6 +16,7 @@ public class ArmazenaPessoa {
    private int idade;
    private float altura;
    private int id;
+   private int index;
    
    public static int contador;
 
@@ -62,8 +63,9 @@ public class ArmazenaPessoa {
         contador++;
     }
    
-    public String buscaPessoa(String nome){
-        return nome;
+    public int buscaPessoa(String nome){
+        
+        return index;     
              }
     
     public void imprimeAgenda(){   
@@ -73,11 +75,12 @@ public class ArmazenaPessoa {
     
     }
     
-    public void imprimePessoa(int index){
+    public void imprimePessoa(){
     System.out.println(getNome());
     System.out.println(getIdade());
     System.out.println(getAltura());
-    }
+    
    
+    }
 
 }

@@ -30,32 +30,34 @@ public class Agenda {
             System.out.println("O id do " + a[i].getNome() + " é " + a[i].getId());
         }
 
+         System.out.println();
+        
 //C
         System.out.println("Imprimir a agenda inteira");
          for (int i = 0; i < 2; i++) {
-         System.out.println("Registro "+i);
+         System.out.println("Registro "+(i+1));
              a[i].imprimeAgenda();    
          }
         
+         System.out.println();
         
-//D      
-         System.out.println("Digite um id para imprimir");
-        
-         
-         
-         /*for(int i=0; i< 1; i++){
-           i = sc.nextInt();
-             a[i].imprimePessoa();
-         }*/
+//B
+        System.out.println("Digite um nome para descobrir a posição");
+        String c = sc.next(); 
+        for(int i=0; i<2 ; i++){
+        if(a[i].getNome() .equals(c)){
+        System.out.println("A posição é: "+(i+1));
+        }else { System.out.println("passou");}
+        }
+       
        
          
+//D
+     System.out.println();
+        System.out.println("Digite um id para imprimir");
+         a[sc.nextInt()-1].imprimePessoa();
+  
          
-        /*
-        for (int i = 0; i < 2; i++) {
-            a[i].buscaPessoa = sc.next();
-            if (a[i].buscaPessoa == a[i].getNome) {
-                System.out.println("A posição é: " + i);
-            }
-        }*/
+         
     }
 }
