@@ -48,7 +48,7 @@ public class AtributosElevador {
     }
 
    
-    public void Inicializa(int andar, int qtdPessoas){
+    public void Inicializa(){
      this.andar = 0;
         this.qtdPessoas = 0;
     }

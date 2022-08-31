@@ -15,7 +15,7 @@ public class Elevador {
        
         AtributosElevador a = new AtributosElevador(5, 5);
         
-        a.Inicializa(0, 0);
+        a.Inicializa();
         
         a.Entra();
         a.Entra();
@@ -32,17 +32,17 @@ public class Elevador {
         a.Sobe();
         a.Sobe();
         a.Sobe();
-         a.Desce();
-           a.Desce();
-             a.Desce();
-             a.Desce();
-             a.Desce();
-             a.Desce();
-         a.Sai();
-          a.Sai();
-           a.Sai();
-            a.Sai();
-             a.Sai();
+        a.Desce();
+        a.Desce();
+        a.Desce();
+        a.Desce();
+        a.Desce();
+        a.Desce();
+        a.Sai();
+        a.Sai();
+        a.Sai();
+        a.Sai();
+        a.Sai();
             
         
         
