@@ -26,7 +26,7 @@ public class ExemploThrows1 {
             double divisor = s.nextDouble();
 
             double resultado = et.dividir(dividendo, divisor);
-            System.out.println("O resultado da divisao eh: "+ resultado);
+            System.out.println("O resultado da divisao eh: " + resultado);
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -38,8 +38,8 @@ public class ExemploThrows1 {
             throws Exception {
         if (divisor == 0) {
             throw new Exception("Nao e permitido fazer uma divisao por zero!");
-        } else if(divisor>dividendo){
-        throw new Exception("Não é permitido dividir com divisor maior que dividendo");
+        } else if (divisor > dividendo) {
+            throw new Exception("Não é permitido dividir com divisor maior que dividendo");
         }
         return dividendo / divisor;
     }
