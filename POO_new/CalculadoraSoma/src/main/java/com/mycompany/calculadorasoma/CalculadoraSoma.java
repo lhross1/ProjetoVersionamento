@@ -22,14 +22,6 @@ public class CalculadoraSoma implements ActionListener {
     private JTextField field2;
     private JTextField field3;
     private JButton button;
-    
-    
-   
-    
-    /*private void getText(){
-      label3 =  field + field2; 
-        
-    }*/
 
     public void janela() {
 
@@ -44,18 +36,14 @@ public class CalculadoraSoma implements ActionListener {
         field3 = new JTextField("Soma: ");
         button = new JButton("OK");
         
-        painel.setLayout(new GridLayout(3,1));
-       // painel2.add(painel);
-        
+        painel.setLayout(new GridLayout(3,1));       
         
         painel.add(label);
         painel.add(field);
         painel.add(label2);
         painel.add(field2);
         painel.add(button);
-        painel.add(field3);
-      //  frame.add(painel);
-      
+        painel.add(field3);   
       
         frame.getContentPane().add(painel);
         frame.pack();
@@ -65,11 +53,9 @@ public class CalculadoraSoma implements ActionListener {
        
 //REGISTRA O EVENTO
         
-         button.addActionListener(this);
-        
+         button.addActionListener(this);     
     }
 
-   
     public void actionPerformed(ActionEvent evento) {
       
        int numeroUm, numeroDois, soma;
@@ -79,7 +65,6 @@ public class CalculadoraSoma implements ActionListener {
        
        field3.setText(String.valueOf(soma));
     
-
     } 
 
     public static void main(String[] args) {
