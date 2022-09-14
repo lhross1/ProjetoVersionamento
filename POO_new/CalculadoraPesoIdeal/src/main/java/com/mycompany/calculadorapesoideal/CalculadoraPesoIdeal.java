@@ -37,13 +37,13 @@ public class CalculadoraPesoIdeal implements ActionListener {
     
      masculino = new JRadioButton("Masculino");
      feminino = new JRadioButton("Feminino");
-    JLabel digiteoSexo = new JLabel("Selecione o sexo:");
-    JLabel altura = new JLabel("Digite a altura:");
-    JTextField alturaDigitada = new JTextField();
-    JLabel pesoIdeal = new JLabel("O peso ideal é:");
-    JTextField resultado = new JTextField();
-    JButton calcular = new JButton("Calcular");
-    JComboBox sexo = new JComboBox();
+     digiteoSexo = new JLabel("Selecione o sexo:");
+     altura = new JLabel("Digite a altura:");
+     alturaDigitada = new JTextField();
+     pesoIdeal = new JLabel("O peso ideal é:");
+     resultado = new JTextField();
+     calcular = new JButton("Calcular");
+     sexo = new JComboBox();
     sexo.addItem("Masculino");
     sexo.addItem("Feminino");
     
@@ -51,10 +51,6 @@ public class CalculadoraPesoIdeal implements ActionListener {
     ButtonGroup bg = new ButtonGroup();
     bg.add(masculino);
     bg.add(feminino);
-    
-
-    
-  
     
     
     jpanel.setLayout(new GridLayout(8, 1));
@@ -83,13 +79,13 @@ public class CalculadoraPesoIdeal implements ActionListener {
    
         
     }
+  
     
     
     public void actionPerformed (ActionEvent evento) {
 
        
         
-   
     if(masculino.isSelected()){
       resultado.setText("teste");
     }else{
@@ -98,7 +94,6 @@ public class CalculadoraPesoIdeal implements ActionListener {
     
      }
          
-     
     
     
     public static void main(String[] args) {
