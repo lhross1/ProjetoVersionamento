@@ -1,8 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.conversormoedas;
+package com.mycompany.exerciciotab;
 
 /**
  *
@@ -12,7 +12,7 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class ConversorMoedas {
+public class ConversorMoedas extends JPanel {
 
     public JLabel label;
     public JLabel label2;
@@ -22,10 +22,8 @@ public class ConversorMoedas {
     public JTextField resultado;
     public JButton calcular;
 
-    public void janela() {
+    public ConversorMoedas() {
 
-        JFrame jframe = new JFrame("Conversor de Moeda");
-        JPanel jpanel = new JPanel();
 
         label3 = new JLabel("Selecione a moeda");
         label = new JLabel("Selecione a moeda");
@@ -41,21 +39,16 @@ public class ConversorMoedas {
         moedas2.addItem("Euro");
         moedas2.addItem("Dolar");
 
-        jpanel.add(label);
-        jpanel.add(moedas1);
-        jpanel.add(label3);
-        jpanel.add(moedas2);
-        jpanel.add(calcular);
-        jpanel.add(label2);
-        jpanel.add(resultado);
+        add(label);
+        add(moedas1);
+        add(label3);
+        add(moedas2);
+        add(calcular);
+        add(label2);
+        add(resultado);
 
-        jpanel.setLayout(new GridLayout(8, 1));
+        setLayout(new GridLayout(8, 1));
 
-        jframe.getContentPane().add(jpanel);
-        jframe.pack();
-        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.setSize(300, 200);
-        jframe.setVisible(true);
 
         ButtonHandler handler = new ButtonHandler();
         calcular.addActionListener(handler);
@@ -90,8 +83,7 @@ public class ConversorMoedas {
     }
 
     public static void main(String[] args) {
-        ConversorMoedas captura = new ConversorMoedas();
-        captura.janela();
+     
 
     }
 

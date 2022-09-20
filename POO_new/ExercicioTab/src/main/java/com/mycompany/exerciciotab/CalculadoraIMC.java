@@ -1,8 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.calculadoraimc;
+package com.mycompany.exerciciotab;
+
+
 
 /**
  *
@@ -12,7 +14,7 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class CalculadoraIMC {
+public class CalculadoraIMC extends JPanel {
 
     public JLabel peso;
     public JTextField pesoDigitado;
@@ -22,11 +24,9 @@ public class CalculadoraIMC {
     public JLabel imc;
     public JTextField imcResultante;
 
-    public void janela() {
+    public CalculadoraIMC () {
 
-        JFrame jframe = new JFrame("CalculadoraIMC");
-        JPanel jpanel = new JPanel();
-
+        
         peso = new JLabel("Digite o peso");
         pesoDigitado = new JTextField();
         altura = new JLabel("Digite a altura");
@@ -35,21 +35,15 @@ public class CalculadoraIMC {
         imc = new JLabel("IMC:");
         imcResultante = new JTextField();
 
-        jpanel.add(peso);
-        jpanel.add(pesoDigitado);
-        jpanel.add(altura);
-        jpanel.add(alturaDigitada);
-        jpanel.add(button);
-        jpanel.add(imc);
-        jpanel.add(imcResultante);
+        add(peso);
+        add(pesoDigitado);
+        add(altura);
+        add(alturaDigitada);
+        add(button);
+        add(imc);
+        add(imcResultante);
 
-        jpanel.setLayout(new GridLayout(8, 1));
-
-        jframe.getContentPane().add(jpanel);
-        jframe.pack();
-        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.setSize(300, 200);
-        jframe.setVisible(true);
+        setLayout(new GridLayout(8, 1));
 
         ButtonHandler handler = new ButtonHandler();
         button.addActionListener(handler);
@@ -74,9 +68,7 @@ public class CalculadoraIMC {
 
     }
 
-    public static void main(String[] args) {
-        CalculadoraIMC captura = new CalculadoraIMC();
-        captura.janela();
+    public static void main(String[] args) {   
 
     }
 

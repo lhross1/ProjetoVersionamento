@@ -1,8 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.calculadorapesoideal2;
+package com.mycompany.exerciciotab;
 
 /**
  *
@@ -12,7 +12,7 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class CalculadoraPesoIdeal2 {
+public class CalculadoraPesoIdeal2 extends JPanel {
 
     public JRadioButton masculino;
     public JRadioButton feminino;
@@ -25,15 +25,12 @@ public class CalculadoraPesoIdeal2 {
     public JButton calcular;
     public ButtonGroup bg;
 
-    public void janela() {
-
-        JFrame jframe = new JFrame("Calculadora de peso Ideal");
-        JPanel jpanel = new JPanel();
+    public  CalculadoraPesoIdeal2() {
 
          masculino = new JRadioButton("Masculino");
          feminino = new JRadioButton("Feminino");
          digiteoSexo = new JLabel("Selecione o sexo:");
-         altura1 = new JLabel("Digite a altura1:");
+         altura1 = new JLabel("Digite a altura:");
          altura1Digitada1 = new JTextField();
          pesoIdeal = new JLabel("O peso ideal é:");
          resultado = new JTextField("");
@@ -44,23 +41,17 @@ public class CalculadoraPesoIdeal2 {
         bg.add(masculino);
         bg.add(feminino);
 
-        jpanel.setLayout(new GridLayout(8, 1));
+        setLayout(new GridLayout(8, 1));
 
-        jpanel.add(digiteoSexo);
-        jpanel.add(masculino);
-        jpanel.add(feminino);
-        jpanel.add(altura1);
-        jpanel.add(altura1Digitada1);
-        jpanel.add(pesoIdeal);
-        jpanel.add(calcular);
-        jpanel.add(resultado);
+        add(digiteoSexo);
+        add(masculino);
+        add(feminino);
+        add(altura1);
+        add(altura1Digitada1);
+        add(pesoIdeal);
+        add(calcular);
+        add(resultado);
       
-
-        jframe.getContentPane().add(jpanel);
-        jframe.pack();
-        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.setSize(200, 200);
-        jframe.setVisible(true);
 
         //CRIA NOVO BUTTON HANDLER PARA TRATAMENTO DE EVENTO DE BOTÃO
         ButtonHandler handler = new ButtonHandler();
@@ -95,8 +86,7 @@ public class CalculadoraPesoIdeal2 {
     }
 
     public static void main(String[] args) {
-     CalculadoraPesoIdeal2 captura = new CalculadoraPesoIdeal2();
-        captura.janela();  
+     
         
        
         
