@@ -62,10 +62,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="122" max="32767" attributes="0"/>
@@ -203,7 +200,8 @@
         </Component>
         <Component class="java.awt.Button" name="button4">
           <Properties>
-            <Property name="label" type="java.lang.String" value="button1"/>
+            <Property name="actionCommand" type="java.lang.String" value="buttonX"/>
+            <Property name="label" type="java.lang.String" value="buttonx"/>
           </Properties>
         </Component>
       </SubComponents>
