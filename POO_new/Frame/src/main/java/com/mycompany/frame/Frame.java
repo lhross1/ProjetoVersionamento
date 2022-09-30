@@ -26,7 +26,7 @@ public class Frame extends JFrame {
 // tab1 carros
         JanelaCarros tab1 = new JanelaCarros();
         jTPane.add("Carros", tab1);
-        setBounds(100, 100, 500, 500);
+        setBounds(200, 200, 600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 

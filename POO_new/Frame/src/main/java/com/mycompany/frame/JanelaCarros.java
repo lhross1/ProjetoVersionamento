@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class JanelaCarros extends JPanel {
 
-    private JButton cadastrar, cancelar, apagar, consultar, editar;
+    private JButton cadastrar, cancelar, apagar, consultar, editar, gravar, ler;
     private JTextField carMarcaField, carModeloField, carAnoField, carCorField,
             carValorField;
 
@@ -52,6 +52,8 @@ public class JanelaCarros extends JPanel {
         botoes.add(consultar = new JButton("Consultar"));
         botoes.add(editar = new JButton("Editar"));
         botoes.add(apagar = new JButton("Apagar"));
+        botoes.add(gravar = new JButton("Gravar"));
+        botoes.add(ler = new JButton("Ler"));
         add(botoes);
         JScrollPane jSPane = new JScrollPane();
         add(jSPane);
@@ -76,6 +78,12 @@ public class JanelaCarros extends JPanel {
         HandlerEditar handler5 = new HandlerEditar();
         editar.addActionListener(handler5);
 
+        HandlerGravar handler6 = new HandlerGravar();
+        gravar.addActionListener(handler6);
+
+        HandlerLer handler7 = new HandlerLer();
+        gravar.addActionListener(handler7);
+
     }
 
     //add linhas do arrayList ao jTable
@@ -96,6 +104,7 @@ public class JanelaCarros extends JPanel {
 
     public class HandlerCadastrar implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent evento) {
 
             Carros c = new Carros(carMarcaField.getText(), carModeloField.getText(), carAnoField.getText(), carCorField.getText(), carValorField.getText());
@@ -113,6 +122,7 @@ public class JanelaCarros extends JPanel {
 
     public class HandlerCancelar implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent evento) {
 
             carMarcaField.setText("");
@@ -126,6 +136,7 @@ public class JanelaCarros extends JPanel {
 
     public class HandlerApagar implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent evento) {
 
             //int i = Integer.parseInt(JOptionPane.showInputDialog("Confirme a posição do Carro na Tabela que deseja Apagar"));
@@ -138,8 +149,7 @@ public class JanelaCarros extends JPanel {
             carAnoField.setText("");
             carCorField.setText("");
             carValorField.setText("");
-            JOptionPane.showMessageDialog(null, "Exclusão Realizado com Sucesso", "Informação",
-                    JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Exclusão Realizado com Sucesso", "Informação",JOptionPane.INFORMATION_MESSAGE);
             atualizarTabela();
 
         }
@@ -147,6 +157,7 @@ public class JanelaCarros extends JPanel {
 
     public class HandlerConsultar implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent evento) {
 
             int i = Integer.parseInt(JOptionPane.showInputDialog("A posição do carro na Tabela"));
@@ -164,25 +175,41 @@ public class JanelaCarros extends JPanel {
 
     public class HandlerEditar implements ActionListener {
 
+        @Override
         public void actionPerformed(ActionEvent evento) {
 
             int i = Integer.parseInt(JOptionPane.showInputDialog("Confirme a posição do Carro na Tabela que deseja Editar"));
             i--;
-             
+
             //int i = jTable.getSelectedRow();
-            
-            
             listaCarros.remove(i);
-            Carros c = new Carros(carMarcaField.getText(), carModeloField.getText(), carAnoField.getText(),carCorField.getText(), carValorField.getText());
+            Carros c = new Carros(carMarcaField.getText(), carModeloField.getText(), carAnoField.getText(), carCorField.getText(), carValorField.getText());
             listaCarros.add(i, c);
             carMarcaField.setText("");
             carModeloField.setText("");
             carAnoField.setText("");
             carCorField.setText("");
             carValorField.setText("");
-            JOptionPane.showMessageDialog(null, "Edição Realizado com Sucesso", "Informação",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Edição Realizado com Sucesso", "Informação", JOptionPane.INFORMATION_MESSAGE);
             atualizarTabela();
 
+        }
+    }
+
+    public class HandlerGravar implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent evento) {
+               Empacotamento.gravarArquivoBinario(listaCarros, "dados.dat");
+        }
+
+    }
+
+    public class HandlerLer implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent evento) {
+             Empacotamento.lerArquivoBinario("dados.dat");
         }
     }
 

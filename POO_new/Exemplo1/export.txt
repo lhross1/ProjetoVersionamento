@@ -1,0 +1,3 @@
+Nome|Luis;PesoCorporal|80,00;Altura|1,77;IMC|25,54;Interpretação|sobrepeso
+Nome|Taynah;PesoCorporal|75,00;Altura|1,65;IMC|27,55;Interpretação|sobrepeso
+Nome|TYRFYTR;PesoCorporal|70,00;Altura|1,80;IMC|21,60;Interpretação|peso adequado
